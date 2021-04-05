@@ -32,7 +32,7 @@ export const useFetchRealExample = ( url ) => {
                         console.log('setState no se llamó')
                     }
 
-                }, 1500);
+                }, 1000);
 
             })
     }, [url])

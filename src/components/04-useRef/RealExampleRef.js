@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MultipleCustomHooksRealExample } from './MultipleCustomHooksRealExample';
 
-import '../02-useEffect/effects.css';
+import './ref.css';
 
 export const RealExampleRef = () => {
 

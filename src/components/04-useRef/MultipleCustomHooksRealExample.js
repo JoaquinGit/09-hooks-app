@@ -1,8 +1,8 @@
 import React from 'react';
-import { useFetchRealExample } from './useFetchRealExample';
-import { useCounterForMultiple } from '../03-examples/useCounterForMultiple';
+import { useFetchRealExample } from '../../hooks/04/useFetchRealExample';
+import { useCounterForMultiple } from '../../hooks/03/useCounterForMultiple';
 
-import '../02-useEffect/effects.css'
+import './ref.css'
 
 export const MultipleCustomHooksRealExample = () => {
 
