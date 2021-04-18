@@ -1,17 +1,16 @@
-// seguir, revisar y cambiar importaciones
-
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
-import { useCounterForMultiple } from './useCounterForMultiple';
+import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
 
 import './layout.css';
 
 export const Layout = () => {
 
-    const { counter, increment } =  useCouter(1);
+    const { state:counter, increment } =  useCounterForMultiple(1);
     const { data } = useFetch( `https://www.breakingbadapi.com/api/quotes/${ counter }` );
     
     const { quote } = !!data && data[0];
+
 
     const pTag = useRef();
     const [boxSize, setBoxSize] = useState({});

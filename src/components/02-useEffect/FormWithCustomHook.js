@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { useForm } from '../../hooks/02/useForm';
+import { useForm } from '../../hooks/useForm';
 
-
-import './effects.css';
+import '../styles.css';
 
 
 export const FormWithCustomHook = () => {
 
+    // onChange activa setState
     const [formState, handleInputChange] = useForm({
        name: '',
        email: '',
@@ -70,7 +70,7 @@ export const FormWithCustomHook = () => {
             </div>
 
             <button className="btn btn-primary" type='submit'>
-                Guadar
+                Guardar
             </button>
 
         </form>

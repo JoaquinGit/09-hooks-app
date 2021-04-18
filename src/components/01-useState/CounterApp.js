@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import './counter.css'
+import React, { useState } from 'react';
+
+import '../styles.css';
 
 export const CounterApp = () => {
 

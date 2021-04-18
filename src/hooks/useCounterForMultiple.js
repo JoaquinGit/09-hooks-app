@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// !!!!! si no le mandan nada, el initialState es = a 10
+// !!!!! si no le mandan nada, el initialState es = a 1
 export const useCounterForMultiple = (initialState = 1) => {
 
     const [state, setState] = useState(initialState);

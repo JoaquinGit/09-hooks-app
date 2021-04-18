@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './effects.css';
 import { Message } from './Message';
+
+import '../styles.css';
 
 export const SimpleForm = () => {
 
@@ -11,7 +12,7 @@ export const SimpleForm = () => {
 
     const {name, email} = formState;
 
-    // [] = Ejecuta solo la primera vez
+    // [] = Ejecuta solo en el primer renderizado
     useEffect(() => {
         console.log('hey')
     }, []);

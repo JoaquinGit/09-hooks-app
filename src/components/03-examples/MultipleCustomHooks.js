@@ -1,8 +1,8 @@
 import React from 'react';
-import { useFetch } from '../../hooks/03/useFetch';
-import { useCounterForMultiple } from '../../hooks/03/useCounterForMultiple';
+import { useFetch } from '../../hooks/useFetch';
+import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
 
-import './examples.css'
+import '../styles.css';
 
 export const MultipleCustomHooks = () => {
 

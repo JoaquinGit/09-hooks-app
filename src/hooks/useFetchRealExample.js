@@ -5,14 +5,18 @@ export const useFetchRealExample = ( url ) => {
     const isMounted = useRef(true);
     const [state, setState] = useState({ data: null, loading: true, error: null });
 
+
+    // solo se ejecuta al desmontarse el componente
     useEffect( () => {
+
+        // la función se dispara cuando el componente se desmonte
         return () => {
             isMounted.current = false;
         }
     }, [])
   
+    // si se desmonta el componente, no se actualiza el state
     useEffect(() => {
-
         
         setState({ data: null, loading: true, error: null });
        
@@ -32,7 +36,7 @@ export const useFetchRealExample = ( url ) => {
                         console.log('setState no se llamó')
                     }
 
-                }, 1000);
+                }, 600);
 
             })
     }, [url])

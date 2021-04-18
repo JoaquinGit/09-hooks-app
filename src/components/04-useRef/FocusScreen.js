@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
-import '../02-useEffect/effects.css'
+
+import '../styles.css';
 
 export const FocusScreen = () => {
 
+    // useRef permite cambiar hacia dónde apunta la variable, SIN DISPARAR UNA RENDERIZACION
+    // useRef almacena valores dentro de propiedad current
     const inputRef = useRef();
     // console.log(ref);
 

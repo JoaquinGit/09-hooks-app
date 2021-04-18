@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MultipleCustomHooksRealExample } from './MultipleCustomHooksRealExample';
 
-import './ref.css';
+import '../styles.css';
 
 export const RealExampleRef = () => {
 
@@ -9,7 +9,7 @@ export const RealExampleRef = () => {
 
     return (
         <div>
-            <h1>RealExampleRef</h1>
+            <h1 className="text-center">RealExampleRef</h1>
             <hr />
 
             { show && <MultipleCustomHooksRealExample /> }

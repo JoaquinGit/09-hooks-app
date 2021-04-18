@@ -8,6 +8,8 @@ export const useForm = (initialState = {}) => {
 
         setState({
             ...state,
+
+            // sobreescribe el estado anterior donde se modifique
             [target.name]: target.value,
         })
     }
