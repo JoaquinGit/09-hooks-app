@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react"
 
 export const useFetchRealExample = ( url ) => {
 
+    // cuando useRef cambia su valor a false no se re-renderiza el componente
     const isMounted = useRef(true);
     const [state, setState] = useState({ data: null, loading: true, error: null });
 

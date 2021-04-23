@@ -1,6 +1,11 @@
+/*
+useLayoutEffect es igual a useEffect, PERO se dispara DESPUES de todas las mutaciones del DOM.
+
+*/
+
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
-import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
+import { useCounterForMultiple } from '../../hooks/useCounter2';
 
 import './layout.css';
 
@@ -11,12 +16,15 @@ export const Layout = () => {
     
     const { quote } = !!data && data[0];
 
-
+    // mantiene la referencia al párrafo del blockquote
     const pTag = useRef();
+
+    // guarda las medidas del elemento
     const [boxSize, setBoxSize] = useState({});
 
     useLayoutEffect( () =>  {
 
+        // obtiene medidas del elemento
         setBoxSize( pTag.current.getBoundingClientRect() );
 
     },[quote])

@@ -7,7 +7,7 @@ Caso de uso: el procesoPesado no debería ejecutarse al presionar el botón Show
 */
 
 import React, { useState, useMemo } from 'react';
-import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
+import { useCounterForMultiple } from '../../hooks/useCounter2';
 import { procesoPesado } from '../../helpers/procesoPesado';
 
 import '../styles.css';

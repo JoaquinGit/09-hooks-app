@@ -1,17 +1,20 @@
+// useRef sirve para tener una variable que cambie sin disparar renderización.
+
 import React, { useRef } from 'react';
 
 import '../styles.css';
 
 export const FocusScreen = () => {
 
-    // useRef permite cambiar hacia dónde apunta la variable, SIN DISPARAR UNA RENDERIZACION
-    // useRef almacena valores dentro de propiedad current
+    // useRef permite cambiar hacia dónde apunta la variable inputRef, SIN DISPARAR UNA RENDERIZACION.
+    // useRef almacena valores dentro de propiedad current. El objeto ref se mantiene persistente y su propiedad current es la que muta.
     const inputRef = useRef();
     // console.log(ref);
 
     const handleClick = () => {
+
         inputRef.current.select();
-        console.log(inputRef);
+        console.log(inputRef.current.className);
     }
 
     return (

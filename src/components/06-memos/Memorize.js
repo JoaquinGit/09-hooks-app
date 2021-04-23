@@ -10,7 +10,7 @@ El componente <Small /> no se debería volver a llamar cuando presiono botón Sh
 */
 
 import React, { useState } from 'react';
-import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
+import { useCounterForMultiple } from '../../hooks/useCounter2';
 import { Small } from './Small';
 
 import '../styles.css';

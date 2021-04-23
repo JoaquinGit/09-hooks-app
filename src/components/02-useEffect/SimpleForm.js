@@ -1,3 +1,12 @@
+/*
+useEffect controla el renderizado.
+Permite que determinado código se ejecute únicamente:
+    - En el primer renderizado, o
+    - cuando cambia determinado elemento, o
+    - cuando se desmonta un componente.
+*/
+
+
 import React, {useEffect, useState} from 'react';
 import { Message } from './Message';
 

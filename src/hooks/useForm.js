@@ -4,6 +4,11 @@ export const useForm = (initialState = {}) => {
 
     const [state, setState] = useState(initialState);
 
+    // método para resetear campos. (Creado para usar 1era vez en 08-useReducer)
+    const reset = () => {
+        setState( initialState );
+    }
+
     const handleInputChange = ( {target}) => {
 
         setState({
@@ -16,6 +21,7 @@ export const useForm = (initialState = {}) => {
 
     return [
         state,
-        handleInputChange
+        handleInputChange,
+        reset
     ];
 }

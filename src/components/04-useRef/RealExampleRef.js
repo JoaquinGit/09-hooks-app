@@ -1,3 +1,9 @@
+/*
+
+En el caso, se utiliza useRef para indicar cuando el componente <MultipleCustomHooksRealExample /> no se encuentra montado, evitando que se que se intente cambiar su estado y disparando por consiguiente un error
+
+*/
+
 import React, { useState } from 'react';
 import { MultipleCustomHooksRealExample } from './MultipleCustomHooksRealExample';
 

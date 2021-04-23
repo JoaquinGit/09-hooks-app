@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFetch } from '../../hooks/useFetch';
-import { useCounterForMultiple } from '../../hooks/useCounterForMultiple';
+import { useCounterForMultiple } from '../../hooks/useCounter2';
 
 import '../styles.css';
 
