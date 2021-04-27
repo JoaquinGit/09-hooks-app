@@ -9,6 +9,8 @@ Material para repaso de Hooks:
 - useLayoutEffect
 - useMemo
 - useCallback
+- useReducer
+- useContext
 
 
 ## Instalación 🔧
